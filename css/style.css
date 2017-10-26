@@ -104,7 +104,14 @@ em {
 
 /* Custom Styles */
 /*for mobile screens up to 479 wide*/
-
+#animation-frame {
+	background: #ddd;
+	width: 500px;
+	height: 300px;
+	border: solid #000 1px;
+	margin: 0 1rem 1rem 0;
+	overflow: hidden;
+}
 
 /*for screens 480 wide*/
 @media screen and (min-width: 480px){
