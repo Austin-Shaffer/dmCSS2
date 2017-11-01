@@ -119,6 +119,26 @@ h1 {
 	font-weight: bold;
 	font-size: 225%;
 	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	left: -400px;
+	animation: presents 1s ease-in-out 2s 1 forwards;
+}
+
+@keyframes presents {
+	0%{
+		left: -400px;
+		opacity: 0;
+	}
+
+	50% {
+		left: 200px;
+		opacity: .5;
+	}
+
+	100% {
+		left: 0px;
+		opacity: 1;
+	}
 }
 
 .body-area {
@@ -131,15 +151,110 @@ h1 {
 	font-weight: bold;
 	font-size: 145%;
 	font-family: Arial, Helvetica, sans-serif;
+	animation: item 2s ease-in 4s 1 forwards;
+	position: relative;
+	text-align: center;
+	top: 250px;
 }
 
-p {
+@keyframes item {
+	0%{
+		top: 250px;
+		opacity: 0;
+	}
+
+	50% {
+		top: -50px;
+		opacity: .5;
+	}
+
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+.slogan {
 	font-family: Arial, Helvetica, sans-serif;
+	left: 510px;
+	position: relative;
+	font-style: italic;
+	font-size: 105%;
+	animation: slogan 1s ease-in 3s 1 forwards;
+}
+
+@keyframes slogan {
+	0%{
+		left: 510px;
+		opacity: 0;
+	}
+
+	50% {
+		left: -200px;
+		opacity: .5;
+	}
+
+	100% {
+		left: 0px;
+		opacity: 1;
+	}
 }
 
 #logo {
 	float: left;
 	margin-right: 1.5rem;
+	position: relative;
+	top: -70px;
+	animation: logo .5s ease-in-out 1s 1 forwards;
+}
+
+@keyframes logo {
+	0%{
+		top: -25px;
+		opacity: 0;
+	}
+
+	50% {
+		top: 75px;
+		opacity: .5;
+	}
+
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+#Roomba {
+	position: relative;
+	left: 125px;
+	top: -265px;
+	animation: roomba 3s ease-in 6s 1 forwards;
+}
+
+@keyframes roomba {
+	0%{
+		top: -265px;
+		opacity: 1;
+	}
+
+	50% {
+		left: -200px;
+		top: 200px;
+		opacity: 1;
+	}
+
+	75% {
+		left: 75px;
+		top: 200px;
+		opacity: 1;
+	}
+
+	100% {
+		left: 125;
+		top: 20px;
+		opacity: 1;
+	}
 }
 
 /*for screens 480 wide*/
